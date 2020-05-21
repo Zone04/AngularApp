@@ -1,0 +1,15 @@
+<div class="content">
+  <h2>Messages</h2>
+  <div *ngIf="!messages; else messagesExists">
+    <p>Loading...</p>
+  </div>
+  <ng-template #messagesExists>
+    <div *ngFor="let message of messages" class="comment">
+      <p><span class="author">{{ message.author }}</span> said:<br/>
+        {{ message.content }}</p>
+    </div>
+    <div *ngIf="!messages.length">
+      <p>No messages!</p>
+    </div>
+  </ng-template>
+</div>

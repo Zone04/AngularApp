@@ -1,0 +1,109 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  margin: 10px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  #margin-top: 15px;
+}
+
+.field {
+  position: relative;
+  margin-top: 15px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  line-height: 1.2;
+  padding: .6em 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #6f6f6f;
+  text-align: center;
+  outline: none;
+}
+
+input:hover, input:focus {
+  border-bottom: 1px solid #1976d2;
+  transition: 0.5s ease-out;
+}
+
+label {
+  position: absolute;
+  top: .5em;
+  left: 0;
+  font: inherit;
+  pointer-events: none;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transform-origin: 0 0;
+  text-align: center;
+  color: rgba(0, 0, 0, .54);
+  transition: 400ms;
+}
+
+input:focus + label, label.hasValue {
+  transform: translateY(-1.28125em) scale(.75) perspective(100px) translateZ(.001px);
+  -ms-transform: translateY(-1.28125em) scale(.75);
+  width: 133.33333333%;
+  transition: 400ms;
+}
+
+.button {
+  margin-top: 15px;
+  text-align: center;
+}
+
+button {
+  background: #1976d2;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid #1976d2;
+  transition-duration: 0.2s;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  background: #135090;
+  border: 2px solid #135090;
+  transition-duration: 0s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.6);
+}

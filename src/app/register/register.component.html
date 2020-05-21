@@ -1,0 +1,27 @@
+<div class="content">
+  <h2>Welcome!</h2>
+  <p>Register here to join us!</p>
+
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit(registerForm.value)">
+
+    <div class="field">
+      <input type="text" id="user" formControlName="user" />
+      <label for="user" [ngClass]="{'hasValue': this.registerForm.get('user').value}">
+        Name
+      </label>
+    </div>
+
+    <div class="field">
+      <input type="password" id="passwd" formControlName="passwd" />
+      <label for="passwd" [ngClass]="{'hasValue': this.registerForm.get('passwd').value}">
+        Password
+      </label>
+    </div>
+
+    <div class="button">
+      <button>{{buttonText}}</button>
+    </div>
+
+  </form>
+
+</div>

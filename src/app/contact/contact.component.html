@@ -1,0 +1,26 @@
+<div class="content">
+  <h2>Contact Form</h2>
+  <p>Get in touch with us with this form!</p>
+
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+    <div class="field">
+      <input type="text" id="author" formControlName="author" />
+      <label for="author" [ngClass]="{'hasValue': this.contactForm.get('author').value}">
+        Name
+      </label>
+    </div>
+
+    <div class="field">
+      <textarea id="messageContent" formControlName="messageContent" ></textarea>
+      <label for="messageContent" [ngClass]="{'hasValue': this.contactForm.get('messageContent').value}">
+        Your message
+      </label>
+    </div>
+
+    <div class="button">
+      <button>Submit</button>
+    </div>
+
+  </form>
+</div>

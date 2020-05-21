@@ -1,0 +1,15 @@
+.alert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #1976d2;
+  color: white;
+  text-align: center;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
